@@ -1157,6 +1157,7 @@ neverallow {
   -init
   -installd # for relabelfrom and unlink, check for this in explicit neverallow
   -vold_prepare_subdirs # For unlink
+  -tee
   with_asan(`-asan_extract')
 } system_data_file:file no_w_file_perms;
 # do not grant anything greater than r_file_perms and relabelfrom unlink
